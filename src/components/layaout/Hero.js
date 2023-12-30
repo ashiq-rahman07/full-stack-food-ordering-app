@@ -1,16 +1,33 @@
 import Image from "next/image";
+import { Right } from "../icons/Right";
 
 export const Hero = () => {
   return (
-    <section className="grid grid-cols-2">
-      <div>
-        <h1>Everythig is better with pizza</h1>
-        <p>
+    <section className="hero">
+      <div className="py-12">
+        <h1 className="text-4xl font-semibold">
+          Everythig
+          <br />
+          is better
+          <br /> with a&nbsp;
+          <span className="text-primary">pizza</span>
+        </h1>
+        <p className="my-6 text-gray-500 text-sm">
           Pizza is mising piece that makes every day complete, a simple yet
           delecision joy on life
         </p>
+        <div className="flex gap-4 text-sm">
+          <button className="bg-primary text-white flex items-center gap-2 px-4 py-2 rounded-full">
+            Order Now
+            <Right />
+          </button>
+          <button className="flex items-center gap-2 py-2 text-gray-600 font-semibold">
+            Learn More
+            <Right />
+          </button>
+        </div>
       </div>
-      <div className=" w-16 h-16 relative">
+      <div className="relative">
         <Image
           src={"/pizza.png"}
           layout={"fill"}
