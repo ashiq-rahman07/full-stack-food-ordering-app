@@ -3,7 +3,7 @@ import { Right } from "../icons/Right";
 
 export const Hero = () => {
   return (
-    <section className="hero">
+    <section className="hero mt-4">
       <div className="py-12">
         <h1 className="text-4xl font-semibold">
           Everythig
@@ -17,7 +17,7 @@ export const Hero = () => {
           delecision joy on life
         </p>
         <div className="flex gap-4 text-sm">
-          <button className="bg-primary text-white flex items-center gap-2 px-4 py-2 rounded-full">
+          <button className="bg-primary uppercase text-white flex items-center gap-2 px-4 py-2 rounded-full">
             Order Now
             <Right />
           </button>
